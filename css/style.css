@@ -5,11 +5,8 @@ Table Of Contents:
 - General Styles
 - Navigation
 - Home
-- Information
+- Login
 - Button
-- Services
-- Plans
-- Testimonials
 - Newsletter
 - Back To Top Button
 - Extra Pages
@@ -74,7 +71,7 @@ li {
   	background-color: var(--primary);
 }
 
-
+.newsleter,
 .location {
   	background-color: var(--primary-light);
 }
@@ -85,11 +82,9 @@ li {
 
 /* Gradient Border And Background On Icons */
 
+.loginAdm,
 .home .fas,
-.plans .far,
-.information .fas,
-.work .fas,
-.services .fas,
+.law .fas,
 .location .far,
 .location .fas {
 	padding: 20px 0;
@@ -180,15 +175,6 @@ li {
 	background-color: var(--primary);
 }
 
-.navbar .dropdown-item {
-	color: #eee;
-	font-weight: 500;
-	font-size: 0.875rem;
-	line-height: 0.875rem;
-	padding-top: 0.625rem;
-	text-decoration: none;
-	padding-bottom: 0.625rem;
-}
 
 .navbar .dropdown-item:hover {
   	background-color: var(--primary);
@@ -250,6 +236,7 @@ li {
 }
 
 
+
 /****************/
 /*     Home     */
 /****************/
@@ -262,33 +249,213 @@ li {
 }
 
 .para {
-  	width: 50%;
+	width: 50%;
 }
 
 .para-light {
   	opacity: 0.7;
 }
 
-
-/***********************/
-/*     Information     */
-/***********************/
-.information .container-fluid .row div:first-child {
-  	background-color: var(--primary);
+/**************************/
+/*    Login / cadastro    */
+/**************************/
+.conteiner-logo{
+    display: flex;
+    align-items: center;
+}
+.Logo-Texto{
+    font-family: "Poppins", Sans-serif;
+    font-size: 8px;
+    color: white;
+    margin-left: 20px;
 }
 
-.information .container-fluid .row div:last-child {
-  	background-color: white;
+.conteudo{
+    min-width: 100%;
+    height: 100vh;
+    display: table;
 }
 
-.information .container-fluid .row div:nth-child(2) {
-  	background-color: var(--primary-light);
+.conteudo-edital{
+	margin-top: 90px;
+    min-width: 100%;
+    height: 50vh;
+    display: table;
 }
+
+.conteudo-cadastro{
+    min-width: 100%;
+    height: 150vh;
+    display: table;
+}
+
+.conteudo-sobre{
+    min-width: 100%;
+    height: 270vh;
+    display: table;
+}
+
+.meio-Conteudo{
+    display: table-cell;
+    padding-top: 5em;
+    
+}
+.infoLogin{
+    max-width: 900px;
+    width: 900px;
+    height: 550px;
+    max-height: 900px;
+    margin: auto;
+    position: relative;
+    background: #fff no-repeat padding-box;
+    box-shadow: 0px 1px 10px rgb(120, 120, 120);
+    border-radius: 8px;
+    opacity: 0.95;
+    text-align: center;
+    padding: 5vh 25px;
+}
+
+.cadastro{
+    max-width: 900px;
+    width: 900px;
+    height: 850px;
+    max-height: 900px;
+    margin: auto;
+    position: relative;
+    background: #fff no-repeat padding-box;
+    box-shadow: 0px 1px 10px rgb(120, 120, 120);
+    border-radius: 8px;
+    opacity: 0.95;
+    text-align: center;
+    padding: 5vh 25px;
+}
+
+.sobre{
+    max-width: 2000px;
+    width: 900px;
+    height: 2500px;
+    max-height: 1730px;
+    margin: auto;
+    position: relative;
+    background: #fff no-repeat padding-box;
+    box-shadow: 0px 1px 10px rgb(120, 120, 120);
+    border-radius: 8px;
+    opacity: 0.95;
+    text-align: center;
+    padding: 5vh 25px;
+}
+
+
+.cartaoLogin{
+    margin: auto;
+    position: relatve;
+}
+.texto-basico{
+    font-size: 40px;
+    font-family: "Poppins", Sans-serif;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 0.2rem;
+    cursor: default;
+}
+
+.login-label{
+    min-width: 100%;
+}
+
+.basic-label, .login-label{
+    font-size: 20px;
+    font-family: "Poppins", Sans-serif;
+    text-align: left;
+    font-weight: bolder;
+
+}
+
+.basic-input{
+    height: 34px;
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.form-control{
+    display:block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+
+}
+
+
+.Login{
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.col-sm {
+    flex-basis: 0;
+    flex-grow:1;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.Loggin-buttom{
+    margin: 0 15px 10px 15px;
+
+}
+
+.Loggin-buttom{
+    background: #D5B36B;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-family:"Poppins", Sans-serif;
+    border: 2px solid  rgb(172, 145, 88);
+    border-radius: 20px;
+    color: #fff;
+    transition: .3s;
+}
+
+.Loggin-buttom:hover {
+    box-shadow: 8px 8px rgb(172, 145, 88);
+    transition: .3s;
+}
+  
 
 
 /******************/
 /*     Button     */
 /******************/
+
 .btn {
 	color: white;
 	border-radius: 0;
@@ -299,14 +466,6 @@ li {
 	background: transparent;
 	border-image-source: var(--gradient);
 	box-shadow: 5px 5px 0px 0px var(--secondary);
-}
-
-.btn:hover {
-	color: white;
-	box-shadow: none;
-	border-radius: 0;
-	padding: 10px 30px;
-	transform: translate(5px, 5px);
 }
 
 /* Email - Newsletter Button */
@@ -328,15 +487,17 @@ li {
 
 /* Other Pages Button */
 .btn-tertiary {
-	color: black;
-	border-radius: 0;
-	border-width: 2px;
-	padding: 10px 30px;
-	border-image-slice: 1;
-	background-image: none;
-	background: transparent;
-	border-image-source: var(--gradient);
-	box-shadow: 5px 5px 0px 0px var(--secondary);
+    width: 170px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .btn-tertiary:hover {
@@ -347,150 +508,47 @@ li {
 	transform: translate(5px, 5px);
 }
 
-
-/********************/
-/*     Services     */
-/********************/
-.services .card {
-	padding: 20px;
-	border-radius: 0;
-	border: 2px solid white;
-}
-
-.services .card:hover {
-	border: 10px solid;
-	transform: scale(1.01);
-	border-image-slice: 1;
-	border-width: 2px;
-	border-image-source: var(--gradient);
-	box-shadow: 5px 5px 0px 0px #0ee951;
-}
-
-
-/*****************/
-/*     Plans     */
-/*****************/
-.plans .card {
-	padding: 20px;
-	border: 2px solid white;
-}
-
-
-/************************/
-/*     Testimonials     */
-/************************/
-.slider-1 {
-	padding-top: 8.25rem;
-	padding-bottom: 8.5rem;
-}
-
-.slider-1 .section-title {
-  	text-align: center;
-}
-
-.slider-1 .h2-heading {
+.btn-edital {
+	border: 2px solid#444444;
+	background-color: white;
+	color: forestgreen;
+	font-size: 18px;
+	cursor: pointer;
+	padding: 20px 30px;
 	text-align: center;
-	margin-bottom: 3rem;
 }
 
-.testimonial-card {
-	border: 10px solid;
-	border-image-slice: 1;
-	border-width: 3px;
-	border-image-source: var(--gradient);
+.btnradius {
+	border-radius: 50px;
 }
 
-.slider-1 .slider-container {
-  	position: relative;
+.contornobtn {
+	border-color: forestgreen;
 }
 
-.slider-1 .swiper-container {
-	width: 86%;
-	position: static;
-}
-
-.slider-1 .swiper-button-prev,
-.slider-1 .swiper-button-next {
-  	color: var(--primary);
-}
-
-.slider-1 .swiper-button-prev:focus,
-.slider-1 .swiper-button-next:focus {
-	/* even if you can't see it chrome you can see it on mobile device */
-	outline: none;
-}
-
-.slider-1 .swiper-button-prev {
-	left: -14px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
-	background-size: 18px 28px;
-}
-
-.slider-1 .swiper-button-next {
-	right: -14px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
-	background-size: 18px 28px;
-}
-
-.slider-1 .card {
-	border: none;
-	position: relative;
-	background-color: transparent;
-}
-
-.slider-1 .card-image {
-	width: 80px;
-	height: 80px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 50%;
-	margin-bottom: 1.25rem;
-}
-
-.slider-1 .card-body {
-  	padding: 0;
-}
-
-.slider-1 .testimonial-text {
-  	margin-bottom: 0.75rem;
-}
-
-.slider-1 .testimonial-author {
-	margin-bottom: 0;
-	color: #252c38;
-}
-
-.slider-1 .avatar {
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-}
-
-/* Dropdown Menu */
-.navbar .dropdown .dropdown-menu {
-  	animation: fadeDropdown 0.2s; /* required for the fade animation */
-}
-
-@-webkit-keyframes fadeDropdown {
-	0% {
-		opacity: 0;
+	.contornobtn:hover {
+		background-color: forestgreen;
+		color: white
 	}
 
-	100% {
-		opacity: 1;
-	}
+.mesmo-tamanho {
+	width: 33%;
+}
+.mesmo-tamanho2 {
+	width: 100%;
 }
 
-@keyframes fadeDropdown {
-	0% {
-		opacity: 0;
-	}
 
-	100% {
-		opacity: 1;
-	}
+.testotitulo {
+	background-color: white;
+	font-size: 50px;
+	cursor: pointer;
+	padding: 20px 30px;
+	text-align: center;
+	background-color: #D5B36B;
+	color: white;
+   
 }
-
 
 /**********************/
 /*     Newsletter     */
@@ -543,7 +601,7 @@ li {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background-color: var(--primary);
+	background-color: #143f1e
 }
 
 .ex-header h1 {
@@ -555,56 +613,14 @@ li {
 	line-height: 1.625rem;
 }
 
-.ex-basic-1 .list-unstyled .flex-grow-1 {
-  	margin-left: 0.5rem;
-}
-
-.ex-basic-1 .text-box {
-	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
-	background-color: #f7f9fd;
-}
-
-.ex-cards-1 .card {
-	border: none;
-	background-color: transparent;
-}
-
-.ex-cards-1 .card .fa-stack {
-	width: 2em;
-	font-size: 1.125rem;
-}
-
-.ex-cards-1 .card .fa-stack-2x {
-  	color: var(--secondary);
-}
-
-.ex-cards-1 .card .fa-stack-1x {
-	width: 2em;
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 2.125rem;
-}
-
-.ex-cards-1 .card .list-unstyled .flex-grow-1 {
-  	margin-left: 2.25rem;
-}
-
-.ex-cards-1 .card .list-unstyled .flex-grow-1 h5 {
-	margin-top: 0.125rem;
-	margin-bottom: 0.5rem;
-}
 
 
 /*************************/
 /*     Media Queries     */
 /*************************/
 @media only screen and (max-width: 1024px) {
-	.services,
-	.work,
-	.testimonial,
-	.about,
-	.contact,
-	.plans {
+	.law,
+	.home{
 		height: 100%;
 	}
 }
@@ -633,6 +649,8 @@ li {
 		padding-top: 1.75rem;
 		background-color: transparent;
 	}
+
+	
 
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
@@ -688,40 +706,14 @@ li {
 	}
 }
 
-@media only screen and (max-width: 540px) {
-	h1 {
-		font-size: 30px;
-	}
-
-	.para {
-		width: 100%;
-	}
-
-	.swiper-container {
-		width: 92%;
-	}
-
-	.swiper-button-prev {
-		left: -16px;
-		width: 22px;
-		background-size: 22px 34px;
-	}
-
-	.swiper-button-next {
-		right: -16px;
-		width: 22px;
-		background-size: 22px 34px;
-	}
-}
-
 
 .vertical-line {
 	border-left: 2px solid #ffffff;
 	margin-top: 15px;
 	width: 0;
 	margin-bottom: 15px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .logo-prefeitura {
@@ -730,4 +722,10 @@ li {
 	margin-top: 50px;
 	width: 0;
 	margin-bottom: 50px;
+}
+
+.borda {
+	margin-left: 100px;
+	padding: 0;
+	box-sizing: border-box;
 }
